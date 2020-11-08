@@ -202,3 +202,21 @@ h2.top_title span{font-size:12px; color:#666;font-weight:500}
 </style>
 </head>
 <!--源码修改自互联网，仅作为个人页面使用，非商业用途，若侵犯您的合法权益，请及时联系我删除页面-->
+
+
+<link rel="stylesheet" href="dist/gitalk.css">
+      <div id="gitalk-container"></div>
+    </div>
+    <script src="dist/gitalk.min.js"></script>
+    <script>
+      var gitalk = new Gitalk({
+        clientID: '8a12b95b2fcddfed984e',
+        clientSecret: '613f23e347cbe6eee7db81490c601636a7a71402',
+        repo: 'ChuYvWithYou.github.io',
+        owner: 'ChuYvWithYou',
+        admin: ['ChuYvWithYou'],
+        id: 'location.pathname',
+        distractionFreeMode: true
+      });
+      gitalk.render('gitalk-container');
+    </script>
